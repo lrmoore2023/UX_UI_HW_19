@@ -1,0 +1,56 @@
+.inline-block {
+  display: inline-block;
+  vertical-align: top;
+  font-family: "Bai Jamjuree", sans-serif;
+  }
+  
+  
+.logo {
+  width: 23%;
+  /*padding: 1%; can't have this padding or about skills work contact wrapped to next line*/
+}
+  
+nav {
+  width: 73%;
+  padding: 1%;
+  }
+  
+ul {
+  width: 50%;
+  margin-left: auto;
+  }
+  
+.heroImg {
+  height: 600px;
+  padding: 25px;
+  padding-bottom: 130px;
+}
+  
+.content {
+  width: 500px;
+  margin: 0 auto;
+  padding-bottom: 20;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+p{
+  font-family: "Roboto";
+  font-weight: 200;
+  }
+  
+footer {
+  background-color: #373738;
+  padding-bottom: 1;
+  }
+  
+footer ul {
+  display: inline-block;
+  vertical-align: top;
+  padding: 0;
+}
+  
+footer li {
+  color:white;
+  padding: 3px 10px;
+}
+
