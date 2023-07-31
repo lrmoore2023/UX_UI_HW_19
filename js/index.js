@@ -4,6 +4,7 @@ $(document).ready(function() {
   
     $(window).mousedown(function(e) {
         imageWrapper.data("mouseDownAtPos", e.clientX);
+        console.log("clicked");
     });
 
     $(window).mouseup(function() {
