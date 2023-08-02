@@ -1,4 +1,182 @@
 body {
+    overflow-x: hidden;
+}
+
+/*Hero Section*/
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height:100vh;
+    width:100vw;
+}
+
+.inline-block {
+    display: inline-block;
+    vertical-align: top;
+    font-family: "Bai Jamjuree", sans-serif;
+}
+    
+    
+.logo {
+    width: 23%;
+    /*padding: 1%; can't have this padding or about skills work contact wrapped to next line*/
+}
+  
+.navigation {
+    display: flex;
+    justify-content: space-around;
+}
+
+nav {
+    display: flex;
+    width: 73%;
+    padding: 1%;
+}
+    
+ul {
+    width: 50%;
+    margin-left: auto;
+}
+    
+.heroImg {
+    height: 600px;
+    padding: 25px;
+    padding-bottom: 130px;
+}
+    
+.content {
+    width: 500px;
+    margin: 0 auto;
+    padding-bottom: 20;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+  
+p{
+    font-family: "Roboto";
+    font-weight: 200;
+}
+    
+footer {
+    background-color: #373738;
+}
+    
+footer ul {
+    display: inline-block;
+    vertical-align: top;
+    padding: 0;
+}
+    
+footer li {
+    color:white;
+    padding: 3px 10px;
+}
+
+
+/*Skills/work section*/
+  
+h1 h3 {
+    font-family: "Bai Jamjuree" 
+}
+  
+h1 {
+    text-align: center;
+}
+  
+h3 {
+    text-align: center;
+}
+  
+h1, h3, .flexContainer, .workGrid {
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+  
+/* My Skills Secton */
+.flexContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border-color: aqua;
+}
+  
+.flexContainer > div {
+    width: 25%;
+    padding: 4%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  
+/* My Work Secton */
+
+.skillswork {
+    height: 100vh;
+    width: 100vw;
+}
+
+.workGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+}
+  
+.project1 {
+    grid-area: project1;
+}
+  
+.project2 {
+    grid-area: project2;
+}
+  
+.project3 {
+    grid-area: project3;
+}
+  
+.workGrid > div {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: end;
+    text-align: end;
+    column-gap: 20px;
+    padding: 20px;
+}
+  
+.workGrid img {
+    width: 100%;
+    max-height: 150px;
+    object-fit: cover;
+}
+  
+.workGrid button {
+    background-color: #616161;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    align-self: center;
+}
+  
+/* Media Query */
+@media screen and (max-width:600px) {
+    .flexContainer {
+      flex-direction: column;
+    }
+  
+    .flexContainer > div {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .workGrid {
+      grid-template-areas: "project1" "project2" "project3";
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(4, auto);
+    }
+}
+
+/*Personal Work Section*/
+.work {
     margin:0;
     padding: 0;
     height: 100vh;
@@ -16,12 +194,11 @@ body {
     font-family: "Bai Jamjuree", sans-serif;
 }
 
-
   
 #image-wrapper {
     display: flex;
     gap: 2vmin;
-    position: absolute;
+    position: relative;
     left: 50%;
     top: 50%;
     transform: translate(0%, -50%); 
@@ -34,5 +211,10 @@ body {
     object-fit: cover;
     object-position: 100%,center;
 }
+
+
   
-  
+.animated-transform {
+    transition: transform 1200ms ease;
+  }
+
